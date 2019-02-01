@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>login</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav></nav>
+    </header>
+    <section>
+        <div id="container_demo">
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <form method="post" th:action="@{/login}">
+                        <h1>project</h1>
+                        <p>
+                            <label for="username" class="uname" >username</label>
+                            <input id="username" name="username" required="required" type="text" placeholder="username"/>
+                        </p>
+                        <p>
+                            <label for="password" class="youpasswd" >password</label>
+                            <input id="password" name="password" required="required" type="password"
+                                   placeholder="password"/>
+                        </p>
+                        <p class="keeplogin">
+                            <input type="checkbox" name="loginkeeping" id="loginkeeping"
+                                   value="true"/>
+                            <label for="loginkeeping">remember me</label>
+                        </p>
+                        <p class="login button">
+                            <input type="submit" value="login"/>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+</body>
+</html>
